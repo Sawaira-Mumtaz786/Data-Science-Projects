@@ -1,2 +1,2 @@
 # Data-Science-Projects
-Its my Data Science Internship task in Arch Technology
+Its my Data Science Remote Internship tasks in Arch Technology
