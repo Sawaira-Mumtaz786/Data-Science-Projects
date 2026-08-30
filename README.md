@@ -1,8 +1,8 @@
 # Data-Science-Projects
 Its my Data Science Remote Internship tasks in Arch Technology
 
-Task 1: Titanic Survival Classification 
-
+**Task 1: Titanic Survival Classification 
+**__
 Objective: Build a machine learning classification model to predict whether a Titanic passenger 
 survived, based on features such as passenger class, sex, age, and fare. 
 Dataset note: This implementation uses the Titanic dataset built into the Seaborn library 
@@ -13,7 +13,8 @@ Approach: Rows with missing values were dropped, the categorical 'sex' feature w
 encoded, and the data was split 80/20 into training and test sets. A Logistic Regression classifier 
 was trained on pclass, sex, age, and fare to predict the 'survived' label. 
 
-Code 
+**Code 
+**
 import pandas as pd 
 import seaborn as sns 
 from sklearn.model_selection import train_test_split 
@@ -38,10 +39,9 @@ print(f"Model Accuracy: {accuracy:.2%}")
 Output 
 Result: The model achieved an accuracy of 75.52% on the held-out test set. 
 
-
-Task 2: Stock Price Prediction 
-
-Objective: Build a model to predict future stock prices using historical stock data, including 
+**Task 2: Stock Price Prediction 
+**_
+**Objective:** Build a model to predict future stock prices using historical stock data, including 
 opening price, closing price, high, low, and trading volume. 
 Approach: Historical daily closing prices for Apple Inc. (AAPL) from January 2023 to January 
 2024 were downloaded using the y finance library. The day index was used as the predictor 
@@ -49,8 +49,8 @@ feature and closing price as the target. A Linear Regression model was trained o
 of the data (chronologically) and evaluated on the remaining 20%, as permitted by the task brief, 
 which allows either Linear Regression or LSTM. 
 
-Code 
-
+**Code 
+**
 !pip install yfinance -q 
 import yfinance as yf 
 import numpy as np 
@@ -91,16 +91,16 @@ Result: The model produced a Mean Squared Error (MSE) of 188.23 on the test set.
 plot shows the actual AAPL closing price (blue) against the model's predicted trend (red) 
 over the test period. 
 
-1. Notes and Limitations
-2. 
+**1. Notes and Limitations
+**__
 Task 1 uses Seaborn's built-in Titanic dataset as a substitute for a manual Kaggle download, as 
 noted above; the data itself is the standard Titanic dataset. 
 Task 2 uses Linear Regression rather than LSTM. Linear Regression was chosen for 
 interpretability and fast training time; it models the general price trend rather than short-term 
 fluctuations, which is reflected in the MSE and the plotted prediction line.
 
-Conclusion:
-
+**2. Conclusion:
+**
 Both Month 1 tasks were completed successfully: a classification model for Titanic survival 
 prediction (75.52% accuracy) and a regression model for AAPL stock price prediction (MSE 
 188.23). These tasks demonstrated core data science skills including data cleaning, feature 
@@ -109,4 +109,5 @@ preparation, model training, and performance evaluation.
 <img width="550" height="274" alt="image" src="https://github.com/user-attachments/assets/6c647e54-4e45-401c-83d9-13611bb5d5d7" />
 
 
-Submited By Sawaira Mumtaz
+**Submited By Sawaira Mumtaz
+**__
